@@ -2,7 +2,7 @@ title: Lab Programmation Script en Powershell
 tagline: 'Random numbers, variables, and conditionals'
 description: Apprendre à écrire un algorithme de recherche arborescente en Python!
 tags:
-  - Python
+  - Powershell
 template:
   name: lab-programmation-script-powershell
   repo: lab-programmation-script-powershell-patron
