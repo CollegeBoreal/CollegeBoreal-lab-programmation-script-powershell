@@ -25,7 +25,7 @@ for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
 
 Comme tu as pu le remarquer le tableau `$villes` à une variable publique `Count` qui nous donne la taille du tableau. Dan notre cas, on veux savoir si cette taille est paire. Pour le savoir on va utilise l'opérateur Modulo `%` et si la taille est impaire (le reste de la division), on obtient un `1`
 
-Au lieu d'utilise l'instruction `Write-Host` pour afficher, on prendra le formattage suivant qui utilise des variables positionnelles (plus de contenu just un peu plus tard): 
+Au lieu d'utiliser l'instruction `Write-Host` pour afficher, on prendra le formattage suivant qui utilise des variables positionnelles (plus de contenu just un peu plus tard): 
 
 :warning: Pour permettre l'affichage du résultat uniquement, enlever le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran.
 
