@@ -21,42 +21,43 @@ Modifie le programme Powershell avec l'éditeur de ton choix et changer l'auteur
 
 - [ ] Exécuter le script PowerShell
 
-Voyons voir le programme Python, on peut y voir une fonction `main` qui contiendra toutes les instructions pour écrire l'algorithme:
+Voyons voir le script Powershell, on peut y voir une commande `Write-Host` qui imprime du texte à la console du terminal:
 
 ```powershell
-def main():
-  #print('Informatique: le rêve')
+Write-Host "Bonjour Monde"
 ```
 
-En dessous de la fonction, on trouvera un `if` appellant cette fonction:
+- [ ] `Avant ce code`, on va insérer des parametres pour rendre l'impression plus dynamique.
 
 ```powershell
-if __name__== "__main__":
-    main()
+$personneNom = "Alice"
+$personneAge = 35
 ```
 
-En faisant cela, la fonction `main` s'èxècutera tant que le programme Python est éxécuté.
+- [ ] On va maintenant remplacer l'impression de "Bonjour Monde" avec une version avec les parametres:
 
-Dans la fonction `main`, enlève le commentaire se trouvant sur la ligne:`#print('Informatique: le rêve')`. Cela permettra d'afficher le texte qui se trouve entre les parenthèses. Il y a un `#` devant la ligne, qui veut dire que c'est un commentaire. Enlève le commentaire par le retrait du `#` permettant à Python de lire la ligne et sauveguarde le fichier.
+```powershell
+Write-Host "Bonjour $personneNom, tu as $personneAge ans. "
+```
 
 - [ ] Fais tourner ton programme dans ton terminal
 
-Pour éxécuter le programme Python taper `python b000000000.py` dans le terminal. Le programme Python doit se trouver dans le même répertoire ou l'on se trouve.
+Pour éxécuter le script PowerShell taper `b000000000.ps1` dans le terminal. Le script PowerShell doit se trouver dans le même répertoire ou l'on se trouve.
 
-* Sous Powershell (Sous windows utilise le champ recherche de ta barre d'icône et tape `Anaconda Powershell` )
-
-```
-PS > python b000000000.py
-```
-
-* Sous ZSH (Sous :apple:)
+* Sous Windows:
 
 ```
-% python b000000000.py
+PS > .\b000000000.ps1
+```
+
+* Sous pwsh (Sous :apple:)
+
+```
+% ./b000000000.ps1
 ```
 
 
-Après l'éxécution, sur votre terminal s'affichera: "Informatique: le rêve". Nous ferons mieux dans quelques instants mais pour l'instant, il faut soumettre le code vers GitHub. 
+Après l'éxécution, sur votre terminal s'affichera: "Bonjour Alice, tu as 35 ans.". Nous ferons mieux dans quelques instants mais pour l'instant, il faut soumettre le code vers GitHub. 
 
 
 - [ ] Soumettre les modifications
@@ -65,6 +66,6 @@ Pour chaque changement de fichiers dans ton référentiel, il faut  `ajouter` et
 
 :round_pushpin: Faisons ces trois étapes:
 
-1. Ajouter dans Git: `git add b000000000.py`
-2. Signer dans Git: `git commit -m "Enlever le commentaire de la ligne 8"`
+1. Ajouter dans Git: `git add b000000000.ps1`
+2. Signer dans Git: `git commit -m "Embellir son bonjour"`
 3. Soumettre à Git: `git push`
