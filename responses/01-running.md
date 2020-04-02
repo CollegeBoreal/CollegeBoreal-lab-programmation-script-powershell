@@ -42,18 +42,18 @@ Write-Host "Bonjour $personneNom, tu as $personneAge ans. "
 
 - [ ] Fais tourner ton programme dans ton terminal
 
-Pour éxécuter le script PowerShell taper `b000000000.ps1` dans le terminal. Le script PowerShell doit se trouver dans le même répertoire ou l'on se trouve.
+Pour éxécuter le script PowerShell taper `b000000000-structure.ps1` dans le terminal. Le script PowerShell doit se trouver dans le même répertoire ou l'on se trouve.
 
 * Sous Windows:
 
 ```
-PS > .\b000000000.ps1
+PS > .\b000000000-stucture.ps1
 ```
 
 * Sous pwsh (Sous :apple:)
 
 ```
-% ./b000000000.ps1
+% ./b000000000-stucture.ps1
 ```
 
 
@@ -66,6 +66,6 @@ Pour chaque changement de fichiers dans ton référentiel, il faut  `ajouter` et
 
 :round_pushpin: Faisons ces trois étapes:
 
-1. Ajouter dans Git: `git add b000000000.ps1`
+1. Ajouter dans Git: `git add b000000000-sturcture.ps1`
 2. Signer dans Git: `git commit -m "Embellir son bonjour"`
 3. Soumettre à Git: `git push`
