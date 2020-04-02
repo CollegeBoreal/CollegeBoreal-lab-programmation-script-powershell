@@ -1,9 +1,9 @@
 Félicitations, tu viens de terminer le laboratoire!
 
-Tu as maintenant tout un code Python te permettant d'explorer l'algorithme du BFS
+Tu as maintenant plusieurs scripts PowerShell te permettant d'explorer ce language de script.
 
-Ce que tu peux faire d'autres :
+Ce que tu peux faire d'autres pour les améliorer:
 
-1. Change l'arbre à ton gout en respectant les chemins et évitant les cycles potentiels.
-2. Change la fonction permettant de sortir de la recherche.
-3. Évite la boucle en utilisant les notions de programmation fonctionelle. 
+1. Rajouter des critères de validation à la fonction `Stagiaire`,
+2. Créer une aide à la fonction `Stagiaire`
+3. Bien d'autres bouts de scripts à rajouter. 
