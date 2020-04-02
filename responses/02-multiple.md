@@ -2,7 +2,7 @@ Tu as entré {{ taille }} , j'ai trouvé `en pleine force vive` . Cela n'a pas t
 
 - [ ] Structure de donnée - Tableau
 
-Jouons encore avec une variable, cette fois ci un tableau. À la fin du script, rajoute ce code:
+Jouons encore avec une variable, cette fois ci un tableau. À la fin du script `b000000000-sturcture.ps1` , rajoute ce code:
 
 ```powershell
 $villes = "Toronto","Mississauga","Scarborough","Brampton"
@@ -40,7 +40,7 @@ Au lieu d'utilise l'instruction `Write-Host` pour afficher, on prendra le format
 
 **Soumets ton code** vers GitHub pour continuer:
 ```
-git add b000000000.py
+git add b000000000-structure.ps1
 git commit --message "La reste du Modulo est <remplace ICI>"
 git push
 ```
