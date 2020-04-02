@@ -2,7 +2,7 @@ Tu as entré {{ taille }} , j'ai trouvé `en pleine force vive` . Cela n'a pas t
 
 - [ ] Structure de donnée - Tableau
 
-Jouons encore avec une variable, cette fois ci un tableau. À la fin du script `b000000000-sturcture.ps1` , rajoute ce code:
+Jouons encore avec une variable, cette fois ci un tableau. À la fin du script `b000000000-structure.ps1` , rajoute ce code:
 
 ```powershell
 $villes = "Toronto","Mississauga","Scarborough","Brampton"
