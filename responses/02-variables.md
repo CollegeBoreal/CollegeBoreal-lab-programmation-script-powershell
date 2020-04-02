@@ -1,6 +1,6 @@
 ## Utilisation de Variables
 
-On va modifier notre script en donnant aux paramètres des types, on en déduit donc que ce sont des variables.
+On va modifier notre script `b000000000-structure.ps1` en donnant aux paramètres des types, on en déduit donc que ce sont des variables.
 
 - [ ] Devant nos variables rajoutons les types comme ceci
 
