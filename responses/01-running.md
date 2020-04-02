@@ -55,7 +55,7 @@ PS > .\b000000000-structure.ps1
 ```
 
 
-Après l'éxécution, sur votre terminal s'affichera: "Bonjour Alice, tu as 35 ans.". Nous ferons mieux dans quelques instants mais pour l'instant, il faut soumettre le code vers GitHub. 
+Après l'éxécution, sur votre terminal s'affichera: `Bonjour Alice, tu as 35 ans.`. Nous ferons mieux dans quelques instants mais pour l'instant, il faut soumettre le code vers GitHub. 
 
 
 - [ ] Soumettre les modifications
