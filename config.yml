@@ -1,12 +1,12 @@
 title: Lab Programmation Script en Powershell
 tagline: 'Random numbers, variables, and conditionals'
-description: Apprendre à écrire un algorithme de recherche arborescente en Python!
+description: Apprendre à écrire un script en PowerShell
 tags:
   - Powershell
 template:
   name: lab-programmation-script-powershell
   repo: lab-programmation-script-powershell-patron
-  description: Recherche BFS en Python
+  description: Programmation script en PowerShell
 before:
   - type: createIssue
     title: Installer son projet
@@ -22,8 +22,8 @@ steps:
         issue: 1
         data:
           id: '%payload.comment.body%'
-  - title: Éxécuter un programme Python
-    description: Éxécute un programme Python avec la fonction main
+  - title: Éxécuter un script PowerShell
+    description: Éxécute un script PowerShell en écrivant sur la console
     event: push
     link: '{{ repoUrl }}/issues/1'
     actions:
@@ -36,7 +36,7 @@ steps:
         title: Utilisation de variables
         body: 02-variables.md
   - title: Utiliser les Variables
-    description: Définit l'arbre
+    description: Définir des variables et leurs types
     event: issue_comment
     link: '{{ repoUrl }}/issues/2'
     actions:
