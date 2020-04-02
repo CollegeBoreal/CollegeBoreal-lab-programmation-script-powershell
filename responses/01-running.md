@@ -2,28 +2,35 @@ Chèr.e {{ id }}, il est temps de faire de la programmation!
 
 - [ ] Changer l'auteur du programme Python
 
-```python
-# -*- coding: utf-8 -*-
-"""
+```powershell
+<#
+.SYNOPSIS
+    Ce script est une laboratoire Powershell
 
-@author: CollegeBoreal
-"""
+.DESCRIPTION
+    Ce script est utilisé pour le laboratoire de programmation en Powershell.
+
+.NOTES
+    Author: CollegeBoreal
+    Derniere mise à jour: yyyy-mm-dd
+
+#>
 ```
 
-Modifier le programme Python avec l'éditeur de ton choix et changer l'auteur `CollegeBoreal` avec ton :id: Github
+Modifie le programme Powershell avec l'éditeur de ton choix et changer l'auteur `CollegeBoreal` avec ton :id: Github
 
-- [ ] Exécuter un programme Python
+- [ ] Exécuter le script PowerShell
 
 Voyons voir le programme Python, on peut y voir une fonction `main` qui contiendra toutes les instructions pour écrire l'algorithme:
 
-```python
+```powershell
 def main():
   #print('Informatique: le rêve')
 ```
 
 En dessous de la fonction, on trouvera un `if` appellant cette fonction:
 
-```python
+```powershell
 if __name__== "__main__":
     main()
 ```
