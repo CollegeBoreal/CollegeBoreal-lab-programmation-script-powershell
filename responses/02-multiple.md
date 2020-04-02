@@ -10,7 +10,7 @@ $villes = "Toronto","Mississauga","Scarborough","Brampton"
 
 - [ ] Structure de contrôle
 
-Nous avons tous vu ce code de type `programmation impérative` qui fait tourner le monde.. La boucle impérative. Continue en entrant ce code ainsi que le commentaire qui va avec.
+Nous avons tous vu ce code de type `programmation impérative` qui fait tourner le monde: La boucle impérative. Continue en entrant ce code ainsi que le commentaire qui va avec.
 
 ```powershell
 for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
