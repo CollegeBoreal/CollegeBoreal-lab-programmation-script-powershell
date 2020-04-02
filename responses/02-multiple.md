@@ -1,6 +1,27 @@
 Tu as entré {{ taille }} , j'ai trouvé `en pleine force vive` . Cela n'a pas trop d'importance pour l'instant, continuons!.
 
-- [ ] Déterminons la personne élue
+- [ ] Structure de donnée - Liste
+
+Jouons encore avec une variable, cette fois ci une liste (ou en core un tableau). À la fin du script, rajoute ce code
+
+```powershell
+$villes = "Toronto","Mississauga","Scarborough","Brampton"
+```
+
+- [ ] Structure de contrôle
+
+Nous avons tous vu ce code de type `programmation impérative` qui fait tourner le monde.. La boucle impérative. Continue en entrant ce code ainsi que le commentaire qui va avec.
+
+```powershell
+for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
+    $villes[$i]
+}
+
+#Clear-Host
+
+```
+
+
 
 Pour que notre algorithme fonctionne, nous allons assigner une personne qui nous permettra d'arrêter notre recherche.
 
