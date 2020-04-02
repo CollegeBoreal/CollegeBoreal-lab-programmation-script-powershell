@@ -30,6 +30,7 @@ Stagiaire
     "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge
 ```
 
+Comme tu peux le remarquer, le formattage utilise de d'affichage à l'aide de variables positionnelles. `{0}` indiquant la position de la variable `$personneNom` et `{1}` indiquant la position de la variable `$personneAge`
 
 
 - [ ] Exécute ton code et ajoute en commentaire l'impression que tu as obtenu. On passera ensuite au code suivant.
