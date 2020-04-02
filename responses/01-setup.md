@@ -42,8 +42,6 @@ Si Python n'est pas installé, utiliser un gestionnaire de librairies.
 % brew cask install powershell
 ```
 
-:warning: Ce laboratoire n'utilise pas Python **2**
-
 ## :b: Installer [Git](https://git-scm.com/downloads)
 
 :two: Présence de Git
