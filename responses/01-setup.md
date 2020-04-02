@@ -1,32 +1,45 @@
-  Bienvenue dans ce laboratoire qui te guidera à écrire un programme dans le language [Python](https://www.python.org). Le programme se concentrera sur l'étude de l'algorithme permettant l'étude de la recherche binaire basée sur le [BFS](https://en.wikipedia.org/wiki/Breadth-first_search). Avant de commencer, nous allons nous assurer que l'environnement de développement est prêt. 
+  Bienvenue dans ce laboratoire qui te guidera à écrire un programme dans le language de script [PowerShell](https://docs.microsoft.com/fr-ca/powershell/scripting). Le programme se concentrera sur l'étude des structures des données de base ainsi que quelques structures controles les plus connues. Avant de commencer, nous allons nous assurer que l'environnement de développement est prêt. 
 
-## :a: Installer Python 
+## :a: Installer PowerShell
 
-:zero: Présence de Python
+:zero: Présence de Powershell
 
-Ouvrir un terminal et vérifier la version de Python avec la commande suivante
+Ouvrir un terminal, sous Windows ouvrir `CMD`  et vérifier la version de Powershell avec la commande suivante
+
+:round_pushpin: Windows `CMD`
 
 ```
-% python --version
+C:\> powershell -Command "Get-Host | Select-Object Version"
+
+Version
+-------
+5.1.17763.592
 ```
 
-Si Python est installé, le résultat de la commande donnera une version. Cette version doit être superieure à `3.x.x`
+:round_pushpin: MacOS `bash` ou `zsh`
+
+:warning: la commande s'écrit `pwsh` et non `powershell` 
+
+```
+% pwsh -Command "Get-Host | Select-Object Version" 
+
+Version
+-------
+7.0.0
+```
+
+Si Powershell est installé, le résultat de la commande donnera une version. Cette version doit être superieure à `5.x.x`
 
 :one: installer Python avec un `Package manager`
 
 Si Python n'est pas installé, utiliser un gestionnaire de librairies.
 
-:computer: Windows avec [choco](https://chocolatey.org/install)
-
-```
-PS > choco install anaconda3
-```
+:computer: Windows c'est installé par défaut
 
 :apple: MacOS avec [HomeBrew](https://docs.brew.sh/Installation)
 
 ```
-% brew cask install anaconda 
-% echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.zshrc 
+% brew cask install powershell
 ```
 
 :warning: Ce laboratoire n'utilise pas Python **2**
