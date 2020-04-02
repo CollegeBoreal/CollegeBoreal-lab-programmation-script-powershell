@@ -21,7 +21,7 @@ for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
 
 ```
 
-Fais tourner ton code
+Fais tourner ton script dans ton terminal.
 
 - [ ] Modulons
 
@@ -35,7 +35,7 @@ Au lieu d'utiliser l'instruction `Write-Host` pour afficher, on prendra le forma
 "{0}" -F ($villes.Count % 2)
 ```
 
-- [ ] Fais tourner ton script dans ton terminal
+- [ ] Refais tourner ton script dans ton terminal
 
 :bulb: Mets l'affichage imprimé par le script dans le message de ta signature `commit` à la soumission de ton programme.
 
