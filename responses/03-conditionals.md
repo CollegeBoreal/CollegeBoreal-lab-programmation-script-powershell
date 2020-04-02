@@ -1,18 +1,20 @@
 Continuons maintenant avec l'autre script qui ca nou permettre de créer un fonction en PowerShell.
 
 Ouvre le script `b000000000-fonction.ps1`
-Pour naviguer dans la queue, on va demander aux personnes de sortir par la gauche `(du bus)` et tant qu'il y a une personne dans la queue, on continue. Le mouvement s'arrete quand la queue est vide. Ceci est représenté par le code ci-dessous:
 
-```python
-   while search_queue:
-      personne = search_queue.popleft()
+Tu y trouveras la definition de la fonction ainsi que son appel juste en dessous de la definition
+
+```powershell
+# Definition de la fonction
+function Stagiaire {
+
+}
+
+# Appel de la fonction
+Stagiaire
 ```
 
-Ce code ne fait que faire sortir les premières personnes entrées dans le bus. Il ne tient pas compte des `autres stations de bus`, dans notre cas le lien de proximité de nos étudiants.
-
-Pour se faire, nous allons rajouter une ligne `search_queue += eleves[personne]` nous permettant de faire le lien entre tous les étudiants, remplir la queue au fur et à mesure et finalement `traverser` l'arbre entièrement.
-
-- [ ] Remplace la ligne `print( len(search_queue) )` qui imprime la taille des premiers entrés par la traversée de l'arbre suivante
+- [ ] Ajoute des paramètres à la fonction:
 
 ```python
    while search_queue:
