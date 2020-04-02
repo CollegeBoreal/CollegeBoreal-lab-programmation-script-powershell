@@ -27,7 +27,7 @@ Voyons voir le script Powershell, on peut y voir une commande `Write-Host` qui i
 Write-Host "Bonjour Monde"
 ```
 
-- [ ] `Avant ce code`, on va insérer des parametres pour rendre l'impression plus dynamique.
+- [ ] Avant le code `Write-Host "Bonjour Monde"`, on va insérer des parametres pour rendre l'impression plus dynamique.
 
 ```powershell
 $personneNom = "Alice"
