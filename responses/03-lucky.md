@@ -4,55 +4,46 @@ C'est ce que l'on appelle un parcours sans faute.
 
 ## Tracer la visite d'une personne
 
-Il nous reste maintenant à rajouter un bout de code servant à optimiser l'algorithme.
+Il nous reste maintenant à rajouter un bout de code servant à débugger le script.
 
-Pour éviter les cycles ou les etudiants seraient à proximité de plusieurs étudiants et que certains des étudiants auraient déjà répondu à la question posée. On remédiera à ce problème en tenant à jour une liste de personnes ayant répondus à la question ou ayant déjà été `visités`.
+- [ ] Rajoutons un décorateur `[CmdletBindings()]`  aux paramètres d'entrées
 
-On tiendra une liste de personnes visitées en l'appellant `visitees`. On l'initialisera au préalable. Une liste vide peut s'écrire `list()` en Python mais aussi `[]` que l'on choisira car plus élégant . 
-
-- [ ]   On placera ce code juste après l'appel de la fonction `search()`
-
-```python
-def search(name):
-   visitees = []
+```powershell
+    [CmdletBindings()]
+    param (
+        [String]$personneNom,
+        [Int]$personneAge
+    )
 ```
 
-- [ ]  Juste après la sortie de la queue `search_queue.popleft()`, on va tester si la `personne` n'a pas été visitée et on insère le block de code de la personne élue et si on ne sort pas de la condition on continue à chercher la proximité des autres étudiants
+- [ ] Ensuite entourons l'affichage des informations de la personne avec un `début`, un `traitement` (process) et une `fin`, comme ceci:
 
-```python
-      if not personne in visitees:
-         if personne_elue(personne):
-            ...
+```powershell
+    BEGIN {Write-Verbose "Début du script"}
+    PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
+    END {Write-Verbose "Fin du script"}
 ```
 
-- [ ]  Enfin on termine le code en rajoutant la personne visitée dans la liste des visitées
+Il faut remarquer l'affichage à l'écran est maintenant obtenue avec l'instruction `Write-Verbose` qui nous permettra de faire du déboggage en l'affichant ou pas en rajoutant le paramètre `-Verbose` à l'appel de la fonction
+
+:bulb: Si tu as bien suivi le code, tu devrais trouver la fonction `Stagiaire` comme ceci si tu tapes la commande `git diff` dans ton terminal
 
 ```python
-         ...
-         search_queue += eleves[personne]
-         visitees.append(personne)
-```
-
-:warning: Attention à respecter l'indentation quand on rajoute le code `if not personne in visitees:`. Tout le block qui suit doit être indenté de 3 espaces.
-
-:bulb: Si tu as bien suivi le code, tu devrais trouver la fonction `search` comme ceci si tu tapes la commande `git diff` dans ton terminal
-
-```python
- def search(name):
-+   visitees = []
-    search_queue = deque()
-    search_queue += eleves[name]
--   print( len(eleves.values()) )
-+   while search_queue:
-+      personne = search_queue.popleft()
-+      if not personne in visitees:
-+         if personne_elue(personne):
-+            print(personne + " a le fameux Mac")
-+            return True
-+         search_queue += eleves[personne]
-+         visitees.append(personne)
-    return False
-```
+ # Definition de la fonction
+ function Stagiaire {
++    [CmdletBinding()]
+     param (
+         [String]$personneNom,
+         [Int]$personneAge
+     )
+     # message de bienvenue 
+-    "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge
++    BEGIN {Write-Verbose "Début du script"}
++    PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
++    END {Write-Verbose "Fin du script"}
+ 
+ }
+ ```
 
 :star:  `git diff` représente la différence entre le code en train d'ètre modifié et le code soumit sur GitHub
 
@@ -60,11 +51,16 @@ def search(name):
 
 * Les lignes précédées d'un signe `-` sont les lignes supprimées
 
-- [ ]  Éxécute ton programme pour tester ton nouveau code
+- [ ]  Éxécute ton programme pour tester ton nouveau code mais avant rajoute l'appel de fonction suivant à la fin de ton script avant de l'éxécuter
+
+```
+Stagiaire "Pascal Siakam" 26  -verbose
+```
+
 
 **Soumet ton code** vers GitHub pour continuer:
 ```
-git add b000000000.py
+git add b000000000-fonction.ps1
 git commit -m "Tutoriel complété"
 git push
 ```
