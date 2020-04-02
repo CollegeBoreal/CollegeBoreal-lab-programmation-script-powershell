@@ -19,8 +19,6 @@ Chèr.e {{ id }}, il est temps de faire de la programmation!
 
 Modifie le script Powershell avec l'éditeur de ton choix et changer l'auteur `CollegeBoreal` avec ton :id: Github
 
-- [ ] Exécuter le script PowerShell
-
 Voyons voir le script Powershell, on peut y voir une commande `Write-Host` qui imprime du texte à la console du terminal:
 
 ```powershell
