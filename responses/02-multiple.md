@@ -21,6 +21,8 @@ for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
 
 ```
 
+Fais tourner ton code
+
 - [ ] Modulons
 
 Comme tu as pu le remarquer le tableau `$villes` à une variable publique `Count` qui nous donne la taille du tableau. Dan notre cas, on veux savoir si cette taille est paire. Pour le savoir on va utilise l'opérateur Modulo `%` et si la taille est impaire (le reste de la division), on obtient un `1`
