@@ -34,7 +34,7 @@ $personneNom = "Alice"
 $personneAge = 35
 ```
 
-- [ ] On va maintenant remplacer l'impression de "Bonjour Monde" avec une version avec les parametres:
+- [ ] On va ensuite remplacer l'impression de "Bonjour Monde" avec une version avec les parametres:
 
 ```powershell
 Write-Host "Bonjour $personneNom, tu as $personneAge ans. "
