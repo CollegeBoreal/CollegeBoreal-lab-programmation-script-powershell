@@ -76,8 +76,8 @@ steps:
         with: 03-lucky.md
         data:
           personne: '%payload.comment.body%'
-  - title: Finaliser en évitant les cycles
-    description: Finaliser en évitant les cycles
+  - title: Finaliser en mode déboggage
+    description: Finaliser en mode déboggage et que faire ensuite.
     event: push
     link: '{{ repoUrl }}/issues/3'
     actions:
