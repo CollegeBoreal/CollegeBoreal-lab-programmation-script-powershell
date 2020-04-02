@@ -17,7 +17,7 @@ Chèr.e {{ id }}, il est temps de faire de la programmation!
 #>
 ```
 
-Modifie le programme Powershell avec l'éditeur de ton choix et changer l'auteur `CollegeBoreal` avec ton :id: Github
+Modifie le script Powershell avec l'éditeur de ton choix et changer l'auteur `CollegeBoreal` avec ton :id: Github
 
 - [ ] Exécuter le script PowerShell
 
