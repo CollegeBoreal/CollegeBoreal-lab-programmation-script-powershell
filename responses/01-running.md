@@ -1,6 +1,6 @@
 Chèr.e {{ id }}, il est temps de faire de la programmation!
 
-- [ ] Changer l'auteur du programme Python
+- [ ] Changer l'auteur du programme Python dans le script `b000000000-structure.sp1`
 
 ```powershell
 <#
