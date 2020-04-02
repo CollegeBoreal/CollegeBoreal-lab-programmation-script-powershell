@@ -31,17 +31,16 @@ Il faut remarquer l'affichage à l'écran est maintenant obtenue avec l'instruct
 ```python
  # Definition de la fonction
  function Stagiaire {
+-
 +    [CmdletBinding()]
-     param (
-         [String]$personneNom,
-         [Int]$personneAge
-     )
-     # message de bienvenue 
--    "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge
++    param (
++        [String]$personneNom,
++        [Int]$personneAge
++    )
++    # message de bienvenue 
 +    BEGIN {Write-Verbose "Début du script"}
 +    PROCESS { "Bonjour {0} ! Tu as {1} ans." -F $personneNom, $personneAge }
 +    END {Write-Verbose "Fin du script"}
- 
  }
  ```
 
