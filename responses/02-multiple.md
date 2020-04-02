@@ -10,7 +10,7 @@ $villes = "Toronto","Mississauga","Scarborough","Brampton"
 
 - [ ] Structure de contrôle
 
-Nous avons tous vu ce code de type `programmation impérative` qui fait tourner le monde: La boucle impérative. Continue en entrant ce code ainsi que le commentaire qui va avec. Un commentaire sur une seule ligne commence avec le caractère `#`
+Nous avons tous vu ce code de type `programmation impérative` qui fait tourner le monde: La boucle impérative. Continue en entrant ce code ainsi que le commentaire qui va avec à la fin du script. Un commentaire sur une seule ligne commence avec le caractère `#`
 
 ```powershell
 for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
@@ -27,7 +27,7 @@ Comme tu as pu le remarquer le tableau `$villes` à une variable publique `Count
 
 Au lieu d'utiliser l'instruction `Write-Host` pour afficher, on prendra le formattage suivant qui utilise des variables positionnelles (plus de contenu just un peu plus tard): 
 
-:warning: Pour permettre l'affichage du résultat uniquement, enlever le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran.
+:warning: Pour permettre l'affichage du résultat uniquement, enleve le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran et rajoute le code suivant.
 
 ```
 "{0}" -F ($villes.Count % 2)
