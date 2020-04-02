@@ -77,7 +77,7 @@ Maintenant que nous avons Git, nous pouvons cloner le référentiel contenant bl
 Dans le référentiel, il y a deux fichiers:
 
 - `README.md`: un fichier `markdown` donnant des informations sur le laboratoire
-- `b000000000.ps1`: un fichier Python contenant le code à construire
+- `b000000000.ps1`: un script `PowerShell` contenant le code à construire
 
 Maintenant que tout est en place, nous pouvons commencer.
 
