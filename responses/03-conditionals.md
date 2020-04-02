@@ -1,5 +1,6 @@
-Continuons maintenant dans une recherche arborescente plus approfondie.
+Continuons maintenant avec l'autre script qui ca nou permettre de créer un fonction en PowerShell.
 
+Ouvre le script `b000000000-fonction.ps1`
 Pour naviguer dans la queue, on va demander aux personnes de sortir par la gauche `(du bus)` et tant qu'il y a une personne dans la queue, on continue. Le mouvement s'arrete quand la queue est vide. Ceci est représenté par le code ci-dessous:
 
 ```python
