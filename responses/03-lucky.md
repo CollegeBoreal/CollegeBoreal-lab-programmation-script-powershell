@@ -6,10 +6,10 @@ C'est ce que l'on appelle un parcours sans faute.
 
 Il nous reste maintenant à rajouter un bout de code servant à débugger le script.
 
-- [ ] Rajoutons un décorateur `[CmdletBindings()]`  aux paramètres d'entrées
+- [ ] Rajoutons un décorateur `[CmdletBinding()]`  aux paramètres d'entrées
 
 ```powershell
-    [CmdletBindings()]
+    [CmdletBinding()]
     param (
         [String]$personneNom,
         [Int]$personneAge
