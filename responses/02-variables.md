@@ -9,7 +9,7 @@ On va modifier notre script en donnant aux paramètres des types, on en déduit 
 [Int]$personneAge = 35
 ```
 
-- [ ] Aussi, nous allons évoquer quelques concepts qui existe dans des languages de programmation. La notion de `Pattern Matching` qui lie une variable à plusieurs variables. Si un `pattern` est trouvé il faut sortir avec l'instruction `break`
+- [ ] Aussi, nous allons évoquer quelques concepts qui existe dans des languages de programmation. La notion de `Pattern Matching` qui lie une variable à plusieurs options. Si un `pattern` (déterminé par le signe `$_`) est trouvé il faut sortir avec l'instruction `break`
 
 Place le code ci dessous à la fin du script
 
