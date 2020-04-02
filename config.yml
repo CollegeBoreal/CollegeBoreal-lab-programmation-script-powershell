@@ -45,8 +45,8 @@ steps:
         issue: 2
         data:
           taille: '%payload.comment.body%'
-  - title: Traverser l'arbre
-    description: Traverser l'arbre à travers une queue
+  - title: Développer une fonction
+    description: Développer une fonction très simple
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
