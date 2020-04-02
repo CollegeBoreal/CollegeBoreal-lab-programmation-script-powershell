@@ -66,7 +66,7 @@ steps:
       - type: gate
         left: '%payload.comment.body%'
         operator: ==
-        right: Zoureni a le fameux Mac
+        right: Bonjour Toronto ! Tu as 35 ans.
         else:
           - type: respond
             with: 03-unlucky.md
