@@ -33,4 +33,11 @@ Stagiaire
 Comme tu peux le remarquer, le formattage utilise de d'affichage à l'aide de variables positionnelles. `{0}` indiquant la position de la variable `$personneNom` et `{1}` indiquant la position de la variable `$personneAge`
 
 
+- [ ] À l'appel de la fonction, rajoute la première ville du tableau `$villes` que l'on a vu dans l'exercice précédent en premier paramètre (remplace `--VILLE--`) ainsi que l'age d'Alice en deuxième paramètre (remplace `--AGE--`) .
+
+```
+# Appel de la fonction
+Stagiaire --VILLE-- --AGE--
+```
+
 - [ ] Exécute ton code et ajoute en commentaire l'impression que tu as obtenu. On passera ensuite au code suivant.
