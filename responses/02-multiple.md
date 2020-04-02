@@ -1,8 +1,8 @@
 Tu as entré {{ taille }} , j'ai trouvé `en pleine force vive` . Cela n'a pas trop d'importance pour l'instant, continuons!.
 
-- [ ] Structure de donnée - Liste
+- [ ] Structure de donnée - Tableau
 
-Jouons encore avec une variable, cette fois ci une liste (ou en core un tableau). À la fin du script, rajoute ce code
+Jouons encore avec une variable, cette fois ci un tableau. À la fin du script, rajoute ce code:
 
 ```powershell
 $villes = "Toronto","Mississauga","Scarborough","Brampton"
@@ -21,63 +21,26 @@ for ($i = 0; $i -le $villes.Count; $i = $i + 1) {
 
 ```
 
+- [ ] Modulons
 
+Comme tu as pu le remarquer le tableau `$villes` à une variable publique `Count` qui nous donne la taille du tableau. Dan notre cas, on veux savoir si cette taille est paire. Pour le savoir on va utilise l'opérateur Modulo `%` et si la taille est impaire (le reste de la division), on obtient un `1`
 
-Pour que notre algorithme fonctionne, nous allons assigner une personne qui nous permettra d'arrêter notre recherche.
+Au lieu d'utilise l'instruction `Write-Host` pour afficher, on prendra le formattage suivant: 
 
-Notre recherche consiste à trouver la personne dans la classe qui possède un ordinateur Apple :apple:. Pour cela, on va poser la question à tous les étudiants, trouver la première personne qui correspond à notre critère d'élection et stopper notre recherche en retournant `vrai` sinon aller jusqu'au bout de l'arbre et ramener `faux`. Créons une fonction, à part, que l'on nommera `personne_elue` et posons la question si la personne courante `name` est bien l'élue.
+:Warning: Pour permettre l'affichage du résultat uniquement, enlever le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran.
 
-:bulb: On va écrire notre fonction juste après la déclaration de notre arbre `eleves`
-
-```python
-def personne_elue(name):
-    return name == 'Zoureni'
+```
+"{0}" -F ($villes.Count % 2)
 ```
 
-Maintenant que nous avons notre cas de base `base case`, penser à la récursion, on va utiliser une autre `structure de données` pour ordonner notre recherche.  
+- [ ] Fais tourner ton script dans ton terminal
 
-- [ ] Soyons ordonné
-
-Pour cela, nous allons demander à nos étudiants qui sont à proximiter de se mettre en ligne comme quand on prend le bus. Nous allons placer nos étudiants en ligne appellé `Queue`, en Python cela s'appelle `deque` pour [Double Ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue). On peut dépiler la queue, soit du coté gauche, soit du coté droit, d'oû son nom `double ended` Queue.
-
-Juste après la fonction `personne_elue`, écrire la ligne suivante permettant d'aller chercher `(importer)` le code de la `queue` dans une autre librairie appelée `collections`
-
-```python
-from collections import deque
-``` 
-
-Donnons à la queue le nom d'une variable que l'on pourrait appeller `search_queue`. Pour initialiser `search_queue`, c'est à dire la créer en mémoire, on utilise la fonction `deque()` en Python. 
-
-```python
-search_queue = deque()
-```
-
-Pour placer des personnes à la file, on utilise `l'affectation` suivante 
-
-```python
-search_queue += eleves[name]
-```
-
-Nous n'avons pas encore placé l'initialisation et l'affectation de notre variable `search_queue`. Pour cela, nous allons placer `search_queue` dans la fonction `search()` comme montré ci-dessous:
-
-```python
-def search(name):
-   search_queue = deque()
-   search_queue += eleves[name]
-   print( len(search_queue) )
-   return False
-```
-
-Maintenant, le code de la fonction `search()` place les premières personnes à la queue leu leu et le nom de cette personne est donné par le paramètre de la fonction `search()` qui est `name`. La fonction détermine également la taille de la première série de la queue `search_queue` en affichant sa taille avec la fonction `len()`
-
-- [ ] Fais tourner ton programme dans ton terminal
-
-:warning: Mets le chiffre que le programme a imprimé dans le message de ta signature `commit` à la soumission de ton programme.
+:warning: Mets l'affichage imprimé par le script dans le message de ta signature `commit` à la soumission de ton programme.
 
 
 **Soumets ton code** vers GitHub pour continuer:
 ```
 git add b000000000.py
-git commit --message "La taille de la queue est <mon chiffre ICI>"
+git commit --message "La reste du Modulo est <remplace ICI>"
 git push
 ```
