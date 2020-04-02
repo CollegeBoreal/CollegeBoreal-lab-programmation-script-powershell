@@ -27,7 +27,7 @@ Comme tu as pu le remarquer le tableau `$villes` à une variable publique `Count
 
 Au lieu d'utilise l'instruction `Write-Host` pour afficher, on prendra le formattage suivant qui utilise des variables positionnelles (plus de contenu just un peu plus tard): 
 
-:Warning: Pour permettre l'affichage du résultat uniquement, enlever le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran.
+:warning: Pour permettre l'affichage du résultat uniquement, enlever le commentaire `#` de l'instruction `Clear-Host` qui permet de nettoyer tout l'écran.
 
 ```
 "{0}" -F ($villes.Count % 2)
@@ -35,7 +35,7 @@ Au lieu d'utilise l'instruction `Write-Host` pour afficher, on prendra le format
 
 - [ ] Fais tourner ton script dans ton terminal
 
-:warning: Mets l'affichage imprimé par le script dans le message de ta signature `commit` à la soumission de ton programme.
+:bulb: Mets l'affichage imprimé par le script dans le message de ta signature `commit` à la soumission de ton programme.
 
 
 **Soumets ton code** vers GitHub pour continuer:
