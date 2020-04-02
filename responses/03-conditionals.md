@@ -14,12 +14,13 @@ function Stagiaire {
 Stagiaire
 ```
 
-- [ ] Ajoute des paramètres à la fonction:
+- [ ] Ajoute des paramètres à la fonction, Dans le corps de la contion rajoute le code suivant en respectant l'indentation:
 
 ```python
-   while search_queue:
-      personne = search_queue.popleft()
-      search_queue += eleves[personne]
+    param (
+        [String]$personneNom,
+        [Int]$personneAge
+    )
 ```
 
 La traversée de l'abre est presqu'inutile car nous l'avons traversé dans son entier sans avoir trouvé l'élu. Nous devons donc revenir sur nos pas et :
